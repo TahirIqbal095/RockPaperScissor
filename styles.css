@@ -1,0 +1,79 @@
+body{
+  background-image: url("images/mesh.jpg");
+  font-family: 'Montserrat', sans-serif;
+  padding:1% 10%;
+}
+
+h1{
+  font-family: 'Mukta', sans-serif;
+  font-size: 3.5rem;
+  color: #434242;
+}
+
+h3{
+  font-weight: 300;
+}
+
+p{
+  line-height: 1.5;
+}
+
+.rules{
+  padding: 15px;
+}
+
+.human{
+  display: inline-block;
+  text-align: center;
+}
+
+.human, .bot{
+  padding: 10px 15px;
+}
+
+.human1, .bot1{
+  color: #434242;
+}
+
+.rock, .paper, .scissor{
+  width: 30px;
+  margin: 4px;
+}
+
+.you, .bot-text{
+  color: #D1512D;
+  font-weight: bold;
+}
+
+.button{
+  margin-top: 5px;
+  padding: 2px 4px;
+}
+
+.button:hover{
+  background-color: #434242;
+}
+
+.bot{
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  margin-left: 35px;
+}
+
+.result-human, .result-bot{
+  color: #D1512D;
+}
+
+.reset-btn{
+  position: relative;
+  left: 25px;
+  margin: 5px;
+  padding: 8px 15px;
+  background-color: #D1512D;
+  color: #fff;
+}
+.reset-btn:hover{
+  background-color: #FD841F;
+  color: #fff;
+}
