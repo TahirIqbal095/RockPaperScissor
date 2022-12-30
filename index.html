@@ -32,21 +32,17 @@
     </div>
   </nav>
 
-  <div class="row">
-    <div class="col-lg-6 col-md-6 col-sm-12">
+  <div class="container">
 
-      <div class="rules">
-        <h3>- How to play :</h3>
-        <p>1. If you choose Rock, you will win against Scissors but lose against Paper.</p>
-        <p>If you choose Scissors, you will win against Paper but lose against Rock.</p>
-        <p>If you choose Paper, you will win against Rock but lose against Scissors.</p>
-        <p>2. choose your move from the buttons given (rock, papper, scissor)</p>
-        <p>3. Once you choose your option, the bot will make his move, and will beat you 😉</p>
-        <p>4. If you are ready, then let's gooo....</p>
-      </div>
-    </div>
-
-    <div class="top-container-right col-lg-6 col-md-6 col-sm-12">
+        <div class="rules">
+          <h3>- How to play :</h3>
+          <p>1. If you choose Rock, you will win against Scissors but lose against Paper.</p>
+          <p>If you choose Scissors, you will win against Paper but lose against Rock.</p>
+          <p>If you choose Paper, you will win against Rock but lose against Scissors.</p>
+          <p>2. choose your move from the buttons given (rock, papper, scissor)</p>
+          <p>3. Once you choose your option, the bot will make his move, and will beat you 😉</p>
+          <p>4. If you are ready, then let's gooo....</p>
+        </div>
 
       <div class="human">
         <h2 class="you">You</h2>
@@ -54,43 +50,35 @@
         <button type="button" class="btn1 button btn btn-light btn-sm btn-outline-dark">Rock</button>
         <button type="button" class="btn2 button btn btn-light btn-sm btn-outline-dark">Paper</button>
         <button type="button" class="btn3 button btn btn-light btn-sm btn-outline-dark">Scissor</button>
-
         <hr>
-        <div>
           <h3 class="human-response">Rock</h3>
           <p class="result-human"></p>
           <p>Score: <span class="score-human">0</span></p>
-        </div>
+          <a href="index.html"><button type="button" class="reset-btn btn button btn-sm">Reset</button></a>
       </div>
 
       <div class="bot">
-        <h2 class="bot-text">Bot</h2>
+        <h2 class="robot">Robot</h2>
         <i class="bot1 fa-sharp fa-solid fa-robot fa-4x"></i><br>
         <img class="rock" src="images/stone.png" alt="rock">
         <img class="paper" src="images/document.png" alt="paper">
         <img class="scissor" src="images/scissors.png" alt="scissor">
         <hr>
-        <div>
           <h3 class="bot-response">Paper</h3>
           <p class="result-bot"></p>
           <p>Score: <span class="score-bot">0</span></p>
-        </div>
       </div>
-
-      <div class="reset">
-        <a href="index.html"><button type="button" class="reset-btn btn button btn-sm">Reset</button></a>
-      </div>
-
-    </div>
   </div>
 
   <!-- bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
   <!-- javascript -->
   <script src="script.js" charset="utf-8"></script>
-
 </body>
 
 </html>
