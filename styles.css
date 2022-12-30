@@ -1,12 +1,18 @@
 body{
+  background-image: url("images/mesh.jpg");
   font-family: 'Montserrat', sans-serif;
-  padding:1% 10%;
+  padding:1% 5%;
 }
 
 h1{
   font-family: 'Mukta', sans-serif;
   font-size: 3.5rem;
   color: #434242;
+}
+
+h2{
+  color:#222222;
+  font-weight: bold;
 }
 
 h3{
@@ -17,31 +23,39 @@ p{
   line-height: 1.5;
 }
 
-.rules{
-  padding: 15px;
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  flex-grow: 1;
 }
 
-.human{
-  display: inline-block;
-  text-align: center;
+.rules{
+  background-color: #0A2647;
+  color: #fff;
+  opacity: .8;
+  box-shadow: 2px 2px 2px 2px #0A2647;
+  padding: 15px;
+  border-radius: 25px
 }
 
 .human, .bot{
-  padding: 10px 15px;
+  background-color: #557153;
+  color: #fff;
+  opacity: .8;
+  box-shadow: 2px 2px 2px 2px #557153;
+  padding: 15px;
+  border-radius: 25px;
+  text-align: center;
 }
 
-.human1, .bot1{
-  color: #434242;
+.result-human, .result-bot{
+  font-weight: bold;
 }
 
 .rock, .paper, .scissor{
   width: 30px;
   margin: 4px;
-}
-
-.you, .bot-text{
-  color: #D1512D;
-  font-weight: bold;
 }
 
 .button{
@@ -53,20 +67,7 @@ p{
   background-color: #434242;
 }
 
-.bot{
-  display: inline-block;
-  position: absolute;
-  text-align: center;
-  margin-left: 35px;
-}
-
-.result-human, .result-bot{
-  color: #D1512D;
-}
-
 .reset-btn{
-  position: relative;
-  left: 25px;
   margin: 5px;
   padding: 8px 15px;
   background-color: #D1512D;
