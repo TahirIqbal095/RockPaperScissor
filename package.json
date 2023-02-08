@@ -1,0 +1,22 @@
+{
+  "name": "rockpaperscissor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./dist/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TahirIqbal095/RockPaperScissor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TahirIqbal095/RockPaperScissor/issues"
+  },
+  "homepage": "https://github.com/TahirIqbal095/RockPaperScissor#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}

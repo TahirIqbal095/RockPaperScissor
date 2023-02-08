@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RockPaperScissor</title>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/fa432fc678.js" crossorigin="anonymous"></script>
+
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="text-gray-700 font-fontRoboto">
+  <section class="min-h-screen">
+    <!-- container -->
+    <div class="container | flex flex-col justify-center space-y-8 p-4">
+
+      <div class="border-2 border-violet-400 w-44 h-44 mx-auto rounded-full shadow-lg flex justify-center">
+        <div class="flex items-center">
+          <img class="w-40 h-40" src="images/rock-paper-scissors.png" alt="img">
+        </div>
+      </div>
+
+      <div class="text-center">
+        <h1 class="font-bold text-3xl">Rock Paper Scissor</h1>
+      </div>
+
+      <!-- rules for the game -->
+      <div class="rules | flex flex-col items-center">
+        <h1 class="text-lg font-bold border-2 p-2 border-violet-400">How to play</h1>
+        <ul class="max-w-[56ch] mt-4">
+          <li>1. If you choose Rock, you will win against Scissors but lose against Paper. <br>
+            -If you choose Scissors, you will win against Paper but lose against Rock. <br>
+            -If you choose Paper, you will win against Rock but lose against Scissors.</li><br>
+          <li>2. choose your move from the buttons given (rock, papper, scissor)</li><br>
+          <li>3. Once you choose your option, the bot will make his move, and will beat you 😉</li><br>
+          <li>4. If you are ready, then let's gooo....</li>
+        </ul>
+      </div>
+
+      <!-- horizontal dotted line -->
+      <div class="flex justify-center">
+        <hr class="hr-custom | w-16 border-dotted border-8 border-gray-300">
+      </div>
+
+      <!-- the game -->
+      <div class="flex justify-center">
+
+        <!-- person -->
+        <div class="">
+
+          <div class="flex">
+
+            <div class="flex justify-center w-24 h-24 rounded-full border">
+              <div class="flex items-center">
+                <img class="w-24" src="images/person.svg" alt="img">
+              </div>
+            </div>
+
+            <div>
+              <p class="human-response | bg-gray-200 font-bold text-sm rounded-md text-center shadow-sm px-4 py-1"></p>
+            </div>
+          </div>
+
+          <div class="mt-4 underline">
+            <h3 class="font-semibold text-sm">Score : <span class="score-human">0</span></h3>
+          </div>
+
+          <div class="flex flex-col gap-4 mt-8">
+            <button type="button"
+              class="btn1 | bg-gray-200 text-gray-700 text-sm font-bold px-4 py-1 rounded-md shadow-sm hover:bg-gray-300 hover:text-gray-700 focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 ">Rock</button>
+            <button type="button"
+              class="btn2 | bg-gray-200 text-gray-700 text-sm font-bold px-4 py-1 rounded-md shadow-sm hover:bg-gray-300 hover:text-gray-700 focus:ring-2 focus:ring-offset-2 focus:ring-gray-300">Paper</button>
+            <button type="button"
+              class="btn3 | bg-gray-200 text-gray-700 text-sm font-bold px-4 py-1 rounded-md shadow-sm hover:bg-gray-300 hover:text-gray-700 focus:ring-2 focus:ring-offset-2 focus:ring-gray-300">Scissor</button>
+          </div>
+
+          <div class="mt-4">
+            <p class="score | text-sm font-semibold"></p>
+            <p class="result-human | text-sm font-semibold text-center underline"></p>
+          </div>
+
+        </div>
+
+
+        <!-- robot -->
+        <div>
+
+          <div class="grid grid-cols-2">
+            <div class="relative">
+              <p
+                class="bot-response | absolute bottom-2 right-0 bg-gray-200 font-bold text-sm rounded-md text-center shadow-sm px-4 py-1">
+              </p>
+            </div>
+
+            <div class="w-24 h-24 border rounded-full flex justify-center">
+              <div class="flex items-center">
+                <img class=" w-20 h-20" src="images/bot.svg" alt="img">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="text-center underline mt-4">
+            <h3 class="font-semibold text-sm">Score : <span class="score-bot">0</span></h3>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="bg-slate-700">
+    <div class="flex flex-col items-center justify-center">
+
+      <div class="">
+        <p class="flex items-center gap-1 text-white"><span class="text-xl">&#169;</span>Tahir iqbal</p>
+      </div>
+
+      <div class="flex gap-2">
+        <a href="#"><i class="text-white fa-brands fa-github"></i></a>
+        <a href="#"><i class="text-white fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="text-white fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
